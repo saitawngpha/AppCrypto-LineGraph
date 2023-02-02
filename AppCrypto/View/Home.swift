@@ -27,9 +27,9 @@ struct Home: View {
                         .frame(width:  50, height: 50)
                     
                     VStack{
-                        Text("Bitcoin")
+                        Text(coin.name)
                             .font(.callout)
-                        Text("BTC")
+                        Text(coin.symbol.uppercased())
                             .font(.caption)
                             .foregroundColor(.gray)
                     }//end vstack
